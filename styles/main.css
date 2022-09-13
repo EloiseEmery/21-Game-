@@ -1,0 +1,144 @@
+* {
+    font-family: 'Oxygen', Arial, monospace;
+}
+
+body {
+    background-color: rgb(28, 27, 34);
+    padding-top: 100px;
+}
+
+h1 {
+    color : cornflowerblue;
+    font-weight: 700;
+}
+
+h2,
+small {
+    color: white;
+    font-weight: 400;
+}
+
+h3 {
+    color:rgb(243, 227, 134);
+    font-weight: 700;
+}
+
+input { 
+    margin-bottom: 20px;
+}
+
+button {
+    border: rgb(243, 227, 134) 1px solid;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+form,
+button,
+h1,
+h2 {
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 50px;
+    text-align: center;
+}
+
+.error-message {
+    color:rgb(243, 227, 134);
+}
+
+.btn-start-game {
+    background-color: cornflowerblue;
+    color:white
+}
+
+.btn-start-game:disabled {
+    background-color: rgb(145, 145, 145);
+    color: white;
+}
+
+.btn-replay-game {
+    background-color: rgb(58, 51, 94);
+    color: white;
+    font-size: 20px; 
+    margin-left: 50px;
+    margin-top: 25px;
+}
+
+.btn-replay-game:hover {
+    background-color: cornflowerblue;
+}
+
+.btn-player:first-of-type:hover {
+    background-color:cornflowerblue;
+    color: white;
+}
+
+.btn-player:last-of-type:hover {
+    background-color:rgb(243, 227, 134);
+    color:red;
+}
+
+.played-game {
+    color: white;
+    margin-left: 50px;
+}
+
+.card-list > * {
+    padding-bottom: 10px;
+}
+
+.footer {
+    bottom: 0;
+    margin-bottom: 25px;
+    margin-right: 25px;
+    position: absolute;
+    right: 0;
+}
+
+
+/******************
+Styles joueurs
+*******************/
+.hidden {
+    display: none;
+}
+
+.player {
+    background-color: rgb(58, 51, 94);
+    color: white;
+    margin: 10px;
+    opacity: 0.5;
+    padding: 25px;
+    pointer-events: none;
+}
+
+.hisTurn {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.stopped {
+    border: green solid 1px;;
+}
+
+.busted {
+    border: red solid 1px;
+    background-color: grey;
+}
+
+.winner {
+    border: cornflowerblue solid 1px;
+    opacity: 1;
+}
+
+.loser {
+    border: none;
+    background-color: grey;
+    opacity: 0.5;
+    pointer-events: none;
+}

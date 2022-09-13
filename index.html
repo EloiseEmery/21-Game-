@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <title> TP 1 - 21 | Éloïse Emery </title>
+    <meta name="description" content="Tp1 JavaScript : jeu 21">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <script type="module" src="./scripts/main.js" defer></script>
+</head>
+
+<body>
+    <h1> 21 GAME </h1>
+    <form data-js-form-panel>
+        <h2> Combien de joueur à cette table ? </h2>
+        <!-- <label for="next_btn">1 joueur minimum"</label> -->
+        <div>
+            <input data-js-input-joueur type="number" id="" name="" value="">
+            <button class="btn-start-game" type="button" data-js-btn-play> Jouer !</button>
+        </div>
+        <small class="error-message" data-js-error-msg></small>
+    </form>
+    <div class="hidden players-panel grid" data-js-players-panel></div>
+    <div><span class="played-game" data-js-game-played></span></div>
+    <button class="hidden btn-replay-game" data-js-replay-btn> Rejouer </button>
+    <small class="footer"> © 2022 | TP 1 - 21 | Éloïse Emery </small>
+</body>
+
+</html>
